@@ -193,6 +193,7 @@ DTC_FLAGS_sun8i-h3-orangepi-plus := -@
 DTC_FLAGS_sun8i-h3-orangepi-2 := -@
 DTC_FLAGS_sun8i-h3-orangepi-zero-plus2 := -@
 DTC_FLAGS_sun8i-h3-nanopi-neo-air := -@
+DTC_FLAGS_sun8i-h3-ultra-affordable-voron := -@
 DTC_FLAGS_sun8i-h3-zeropi := -@
 DTC_FLAGS_sun8i-h3-nanopi-neo := -@
 DTC_FLAGS_sun8i-h3-nanopi-r1 := -@
@@ -243,6 +244,7 @@ dtb-$(CONFIG_MACH_SUN8I) += \
 	sun8i-h3-orangepi-plus2e.dtb \
 	sun8i-h3-orangepi-zero-plus2.dtb \
 	sun8i-h3-rervision-dvk.dtb \
+	sun8i-h3-ultra-affordable-voron.dtb \
 	sun8i-h3-zeropi.dtb \
 	sun8i-h3-emlid-neutis-n5h3-devboard.dtb \
 	sun8i-r16-bananapi-m2m.dtb \

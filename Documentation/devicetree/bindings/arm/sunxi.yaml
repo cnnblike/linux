@@ -970,6 +970,11 @@ properties:
           - const: xunlong,orangepi-lite
           - const: allwinner,sun8i-h3
 
+      - description: UAV Ultra Affordable Voron
+        items:
+          - const: uav,ultra-affordable-voron
+          - const: allwinner,sun8i-h3
+
       - description: Xunlong OrangePi Lite2
         items:
           - const: xunlong,orangepi-lite2
