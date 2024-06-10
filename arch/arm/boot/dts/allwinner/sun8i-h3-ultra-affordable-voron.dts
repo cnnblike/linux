@@ -19,20 +19,27 @@
 		ethernet1 = &xr819;
 	};
 	
+	// the board should contain 512MB memory, with last 12 MB reserved for jailhouse
+	// 512M DDR3/LPDDR3 address: 0x4000 0000 - 0x60000000
+	// top 8 MB reserved from jailhouse hypervisor, it should be 0x60000000 - 0x800000 = 0x5f800000
+	// 4 MB for inmate, then it should be 0x5f800000 - 0x400000 = 0x5f400000
 	reserved-memory {
-		jailhouse: jailhouse@1f800000 {
-			reg = <0x0 0x1f800000 0x0 0x00800000>;
+		#address-cells = <1>;
+		#size-cells = <1>;
+		ranges;
+		jailhouse: jailhouse@5f800000 {
+			reg = <0x5f800000 0x00800000>;
 			no-map;
 			status = "okay";
 		};
 
-		jh_inmate: jh_inmate@1f400000 {
-			reg = <0x0 0x1f400000 0x0 0x00400000>;
+		jh_inmate: jh_inmate@5f400000 {
+			reg = <0x5f400000 0x00400000>;
 			no-map;
 			status = "okay";
 		};
 	};
-
+	
 	chosen {
 		stdout-path = "serial0:115200n8";
 	};
