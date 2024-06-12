@@ -789,6 +789,11 @@ properties:
           - const: radxa,rockpis
           - const: rockchip,rk3308
 
+      - description: Ultra Affordable Voron
+        items:
+          - const: uav,uav-rk3308
+          - const: rockchip,rk3308
+
       - description: Radxa Rock 2 Square
         items:
           - const: radxa,rock2-square
